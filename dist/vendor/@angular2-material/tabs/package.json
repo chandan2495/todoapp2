@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@angular2-material/tabs",
+        "scope": "@angular2-material",
+        "escapedName": "@angular2-material%2ftabs",
+        "name": "@angular2-material/tabs",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\csingh\\Desktop\\Desktop\\Projects\\todoapp2"
+    ]
+  ],
+  "_from": "@angular2-material/tabs@latest",
+  "_id": "@angular2-material/tabs@2.0.0-alpha.7-3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@angular2-material/tabs",
+  "_nodeVersion": "5.7.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/tabs-2.0.0-alpha.7-3.tgz_1471383553723_0.15980613278225064"
+  },
+  "_npmUser": {
+    "name": "angular2-material",
+    "email": "angular-core+npm@google.com"
+  },
+  "_npmVersion": "3.7.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "@angular2-material/tabs",
+    "scope": "@angular2-material",
+    "escapedName": "@angular2-material%2ftabs",
+    "name": "@angular2-material/tabs",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@angular2-material/tabs/-/tabs-2.0.0-alpha.7-3.tgz",
+  "_shasum": "cdb598653c76c7ffdb3627abd8355c725b6c4535",
+  "_shrinkwrap": null,
+  "_spec": "@angular2-material/tabs",
+  "_where": "C:\\Users\\csingh\\Desktop\\Desktop\\Projects\\todoapp2",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "dependencies": {},
+  "description": "Angular 2 Material Tabs",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "cdb598653c76c7ffdb3627abd8355c725b6c4535",
+    "tarball": "https://registry.npmjs.org/@angular2-material/tabs/-/tabs-2.0.0-alpha.7-3.tgz"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
+  "keywords": [
+    "angular",
+    "material",
+    "material design",
+    "components",
+    "tabs"
+  ],
+  "license": "MIT",
+  "main": "./tabs.js",
+  "maintainers": [
+    {
+      "name": "angular2-material",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "name": "@angular2-material/tabs",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "@angular2-material/core": "2.0.0-alpha.7-3"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "scripts": {},
+  "typings": "./tabs.d.ts",
+  "version": "2.0.0-alpha.7-3"
+}
