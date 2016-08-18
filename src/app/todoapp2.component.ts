@@ -45,13 +45,19 @@ export class Todoapp2AppComponent {
     }
   ];
   todos: Object[] = [
-    {todo: "R2", completed: false},
+    {todo: "R2", completed: false, color: "#333"},
   ];
 
   addItem() {
     if (this.item) {
-      this.todos.push({"todo": this.item, "completed":false});
+      this.todos.push({"todo": this.item, "completed":false, color: "#333"});
       this.item="";
     }
+  }
+  done(index: number) {
+    if (this.todos[index]["completed"])
+      this.todos[index]["color"]="#ddd";
+    else
+      this.todos[index]["color"]="#333";
   }
 }

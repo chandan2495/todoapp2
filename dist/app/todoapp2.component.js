@@ -35,14 +35,20 @@ var Todoapp2AppComponent = (function () {
             }
         ];
         this.todos = [
-            { todo: "R2", completed: false },
+            { todo: "R2", completed: false, color: "#333" },
         ];
     }
     Todoapp2AppComponent.prototype.addItem = function () {
         if (this.item) {
-            this.todos.push({ "todo": this.item, "completed": false });
+            this.todos.push({ "todo": this.item, "completed": false, color: "#333" });
             this.item = "";
         }
+    };
+    Todoapp2AppComponent.prototype.done = function (index) {
+        if (this.todos[index]["completed"])
+            this.todos[index]["color"] = "#ddd";
+        else
+            this.todos[index]["color"] = "#333";
     };
     Todoapp2AppComponent = __decorate([
         core_1.Component({

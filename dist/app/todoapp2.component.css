@@ -1,10 +1,12 @@
 .card-container {
   display: flex;
-  padding: 20px 0 0 30%;
+  padding: 15px 24px;
 }
 .card-container > md-card {
   min-height: 700px;
-  width: 60%
+  max-width: 772px;
+  margin: 0 auto;
+  width: 100%;
 }
 md-card-title {
   text-align: center;
@@ -13,10 +15,51 @@ md-card-title {
 body {
   background: #eee;
 }
-md-input{
-  width: 90%;
-  margin-left: 10px;
-}
 .md-list-item {
   border-bottom: 1px solid #ddd;
+}
+.main-body-wrapper {
+  background: #f5f5f5;
+}
+.row {
+  width: 100%;
+}
+.col-80>md-input {
+  width: 100%;
+}
+.col-80 {
+  margin-left: 20px;
+  width: 70%;
+  display: inline-flex;
+}
+.col-20 {
+  width: 30%;
+  display: inline;
+}
+.todo-item {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+.pull-left {
+  float: left;  
+}
+.pull-right {
+  float: right;
+}
+
+@media (min-width: 800px) {
+  .col-80 {
+    width: 89%;
+  }
+  .col-20 {
+    width: 20%;
+  }
+}
+@media (max-width: 600px) {
+  .col-80 {
+    width: 70%;
+  }
+  .col-20 {
+    width: 30%;
+  }
 }

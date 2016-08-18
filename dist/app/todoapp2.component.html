@@ -1,4 +1,4 @@
-<md-sidenav-layout fullscreen>
+<md-sidenav-layout fullscreen class="main-body-wrapper">
 	<md-sidenav #sidenav>
 		<md-nav-list>
 			<a md-list-item *ngFor="let view of views">
@@ -16,18 +16,24 @@
 	</md-toolbar>
 	<div class="card-container">
 		<md-card>
-			<md-card-title>Pending Task</md-card-title>
+			<md-card-title>Pending Tasks</md-card-title>
 			<md-card-content>
-				<form>
-						<md-input placeholder="Write your task here" (keyup.enter)="addItem()" [(ngModel)]="item"></md-input>
-						<button md-fab (click)="addItem()">
-							<md-icon>note_add</md-icon>
-						</button>
-				</form>
+					<div class="row">
+						<div class="col-80">
+							<md-input placeholder="Write your task here" (keyup.enter)="addItem()" [(ngModel)]="item"></md-input>
+						</div>
+						<div class="col-20">
+							<button md-fab (click)="addItem()">
+								<md-icon>note_add</md-icon>
+							</button>
+						</div>
+					</div>
 				<md-list>
-	        <md-list-item *ngFor="let item of todos">
-								<p md-line>{{ item.todo }}</p>
-								<md-checkbox class="md-secondary" [(ng-model)]="item.completed"></md-checkbox>
+	        <md-list-item *ngFor="let item of todos; let i =index">
+							<div class="todo-item">
+								<p md-line class="pull-left"  [style.color]="item.color">{{ item.todo }}</p>
+								<md-checkbox class="md-secondary pull-right" [(ngModel)]="item.completed" (ngModelChange)="done(i)"></md-checkbox>
+							</div>
 	        </md-list-item>
       </md-list>
 			</md-card-content>
